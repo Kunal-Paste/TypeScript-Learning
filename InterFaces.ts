@@ -33,8 +33,38 @@ interface child extends parent{   // it will have all the properties of parent l
     isChild: boolean
 }
 
+//note : two interfaces of same name gets merge , they do not override each other.
+
 function family(obj:child) {
-    
+
 }
+
+
+//type aliases
+
+type myCustomType = string | number | null
+
+function xyz(a:myCustomType) {
+
+}
+
+
+// intersection types
+
+type A = {
+    name:string,
+    email:string
+}
+
+type B = A & {
+    getData(user:string): void
+}
+
+function abc(a:B){
+   // now a will have both the properties of A and B .
+}
+
+// Type aliases does not get merge like interfaces
+// the work of interface is to shape the object
 
 
