@@ -33,3 +33,14 @@ enum statusCode{
 }
 
 statusCode.SERVER_ERROR;
+
+
+// type inference : here we predefine the type before giving a value.
+
+let d:number | boolean
+
+// type annotation: predefining the type of variables that are in the parameter of a function also we define the type of function.
+
+function abcd(a:number, b:boolean):void {
+
+}
