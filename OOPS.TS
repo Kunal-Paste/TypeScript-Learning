@@ -39,5 +39,7 @@ class AiMobileMaker extends MobileMaker {
 
 let m1 = new AiMobileMaker('iphone');
 
+console.log(m1);
+
 // m1.company = 'a'  // since it is protected so it will give an error
 // we can change aiFeature since it is public
