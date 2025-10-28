@@ -14,3 +14,9 @@ console.log(b);
 
 let c = "d";
 console.log('make it end');
+
+// changed my user.email it was causing a problem 
+
+function changEmail(email:string){
+    email="paste@gmail.com"
+}
